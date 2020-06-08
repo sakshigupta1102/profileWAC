@@ -71,8 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.upload_item:
-                Toast.makeText(this, "upload item", Toast.LENGTH_SHORT).show();
+            case R.id.githubsearchapi:
+               // Toast.makeText(this, "upload item", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this,githubsearch1.class);
+                startActivity(intent);
                 return true;
             case R.id.copy_item:
                 Toast.makeText(this, "copy item", Toast.LENGTH_SHORT).show();
